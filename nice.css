@@ -1,0 +1,346 @@
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeOut {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+}
+@-moz-keyframes fadeOut {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}
+@-o-keyframes fadeOut {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fadeOut {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fadeIn {
+    -webkit-animation: fadeIn 500ms ease-in-out;
+    -moz-animation: fadeIn 500ms ease-in-out;
+    -o-animation: fadeIn 500ms ease-in-out;
+    animation: fadeIn 500ms ease-in-out;
+}
+
+.fadeOut {
+    -webkit-animation: fadeOut 500ms ease-in-out;
+    -moz-animation: fadeOut 500ms ease-in-out;
+    -o-animation: fadeOut 500ms ease-in-out;
+    animation: fadeOut 500ms ease-in-out;
+}
+
+fieldset.nice.centralize{
+    justify-content: center;
+}
+
+fieldset.nice{
+    border: none;
+    display: flex;
+    flex:100%;
+    max-width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+fieldset.nice.framed{
+    border: 1px solid;
+}
+
+fieldset.nice.topic{
+    border-left:3px solid;
+}
+
+fieldset.nice input, fieldset.nice textarea{
+    position: relative;
+    border: none;
+    outline: none;
+    background: rgb(233,233,233);
+    overflow: hidden;
+    max-width:100%;
+    width: 100% ;
+    font-size: inherit;
+}        
+
+fieldset.nice textarea{
+    resize: none;
+}
+
+fieldset.nice span.error{
+    color:rgb(144,89,89);
+    font-size: smaller;
+}
+
+.rounded{
+    border-radius: 5px;
+}
+
+fieldset.nice input.underline, fieldset.nice textarea.underline{
+    border-bottom: 2px solid black;
+    background: transparent;
+}
+
+fieldset.nice input.framed, fieldset.nice textarea.framed{
+    border: 1px solid black;
+    background: white;
+}
+
+fieldset.nice label{
+    font-size: larger;
+}
+
+fieldset.nice.large{
+    font-size: 21px;
+}
+
+fieldset.nice.big{
+    font-size: 34px;
+}
+
+fieldset.nice.big-chungus{
+    font-size: 55px;
+}
+
+fieldset.nice button{
+    font-size: inherit;
+    border: none;
+    padding: 2px;
+    width:max-content;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+fieldset.nice button:hover{
+    cursor: pointer;
+}
+
+fieldset.nice button.framed{
+    border: 2px solid black;
+}
+
+fieldset.nice fieldset.radio{
+    width: 15px;
+    height: 15px;
+    left: 0;
+}
+
+/*fieldset.nice fieldset.radio input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -3px;
+    left: -2px;
+    position: relative;
+    background-color: rgb(55,55,55);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgb(233,233,233);
+}
+
+fieldset.nice fieldset.radio input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    position: relative;
+    background-color: rgb(233,233,233);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgb(55,55,55);
+}*/
+
+nav.nice{
+    width: 100%;
+    display: inline-block;
+}
+
+nav.nice a{
+    padding: 3px 2px 0px 5px;
+}
+
+nav.nice a.to-left{
+    float: left;
+}
+
+nav.nice a.to-right{
+    float: right;
+}
+
+nav.nice a.logo{
+    width:max-content;
+    box-sizing:border-box;
+    display: block;
+}
+
+nav.nice a.logo img{
+    width:55px;
+    padding: 0;
+    margin:0;
+}
+
+nav.nice a.logo.large img{
+    width: 89px;
+}
+
+nav.nice a.logo.big img{
+    width: 144px;
+}
+
+nav.nice a.logo.big-chungus img{
+    width: 233px;
+}
+
+nav.nice a.any{
+    text-decoration: none;
+    color: black;
+}
+
+nav.nice a.any:hover{
+    text-decoration: none;
+    cursor:default;
+}
+
+nav.nice a.any:link{
+    text-decoration: none;
+}
+
+nav.nice a.any:visited{
+    text-decoration: none;
+}
+
+nav.nice a.any div.hamburger{
+    border-radius: 100%;
+    display: block;
+    background: transparent;
+    padding: 13px;
+    cursor: pointer;
+}
+
+nav.nice a.any div.hamburger.large{
+    font-size: 21px;
+}
+
+nav.nice a.any div.hamburger:hover div.icon{
+    transform: rotate(90deg);
+}
+
+nav.nice a.any div.hamburger:hover div.menu{
+    display: block;
+}
+
+nav.nice a.any div.hamburger div.icon{
+    background:white;
+    padding: 2px;
+    width: 34px;
+    height: 34px;
+    border-radius: 5px;
+    transition: all 200ms;
+}
+
+nav.nice a.any div.hamburger.transparent div.icon{
+    background: transparent;
+}
+
+nav.nice a.any div.hamburger.large div.icon{
+    width: 55px;
+    height: 55px;
+}
+
+nav.nice a.any div.hamburger div.icon hr{
+    height: 1px;
+    margin-top: 16.6666665%;
+}
+
+nav.nice a.any div.hamburger.large div.icon hr{
+    height: 3px;
+}
+
+nav.nice a.any div.hamburger div.menu{
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background: rgba(34,34,34,0.618);
+    z-index: 500;
+}
+
+nav.nice a.any div.hamburger div.menu ul{
+    background: white;
+    max-width: max-content;
+    list-style: none;
+    list-style-type: none;
+    padding: 5px;
+}
+
+nav.nice a.any.to-right div.hamburger div.menu ul{
+   float: right;
+}
+
+nav.nice a.any div.hamburger div.menu ul li{
+    padding: 13px;
+}
+
+nav.nice a.any div.hamburger div.menu ul li:hover{
+    background: rgb(55,55,55);
+    color: rgb(233,233,233);
+}
+
+/*GRID*/
+div.grid.nice{
+    padding: 5px;
+    width: '100%';
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+}
+
+div.grid.nice div.row{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.grid.nice div.row.heading{
+    font-size: larger;
+    font-weight: bold;
+}
+
+div.grid.nice div.row div.col{
+    width: 144px;
+    text-align: center;
+}
+
+span.message.mistake{
+    color:rgb(144,55,89);
+}
+
+span.message.ok{
+    color: rgb(55,144,89);
+}
+
+div.list-container{
+    border-left: 2px solid;
+    justify-content: center;
+}
+
+div.list-container > footer > a{
+    padding: 15px;
+    float: right;
+}
